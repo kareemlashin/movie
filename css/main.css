@@ -1,0 +1,116 @@
+* {
+    font-family: "Segoe UI Light", Tahoma, Geneva, Verdana, sans-serif;
+    ;
+}
+
+body {
+    background-color: #000;
+}
+
+.side-nav {
+    width: 250px;
+    background-color: #000;
+    color: #fff;
+    font-size: 22px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    z-index: 11111111111111;
+    left: -250px;
+}
+
+.open2 {
+    width: 50px;
+    background-color: #fff;
+    font-size: 22px;
+    position: fixed;
+    top: 0;
+    left: 0px;
+    bottom: 0;
+    height: 100vh;
+    z-index: 11111111111111;
+}
+
+ul {
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    line-height: 40px;
+}
+
+.item {
+    position: relative;
+    overflow: hidden;
+}
+
+.trans {
+    background-color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: 1s top;
+}
+
+.item:hover .trans {
+    position: absolute;
+    top: 0;
+}
+
+.bookMark {
+    margin-left: 13px;
+    cursor: pointer;
+}
+
+i {
+    cursor: pointer;
+}
+
+#bar {
+    position: absolute;
+    top: 50%;
+    margin-left: 13px;
+}
+
+.top {
+    position: absolute;
+    top: 80%;
+    margin-left: 13px;
+}
+
+.myItem {
+    position: absolute;
+    top: 100%;
+    padding-left: 20px;
+}
+
+.icon {
+    position: absolute;
+    bottom: 5%;
+}
+
+.icon ul li {
+    display: inline;
+}
+
+.icon i {
+    font-size: 15px;
+}
+
+.icon p {
+    color: #ccc;
+}
+
+input {
+    border: none !important;
+    border-bottom: 2px solid #999 !important;
+    background-color: transparent !important;
+}
+
+.alert {
+    display: none;
+}

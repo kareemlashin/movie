@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>javascript jquery exam</title>
+</head>
+
+<body>
+    <div class="side-nav" id="side-nav">
+        <ul class="myItem pt-3">
+            <li>Now playing</li>
+            <li>Popular</li>
+            <li>Upcoming</li>
+            <li>Top Rated</li>
+            <li>Trending</li>
+            <li>Contact Us</li>
+        </ul>
+        <div class="icon  px-3">
+            <ul>
+                <li><i class="fab fa-twitter"></i></li>
+                <li><i class="fab fa-facebook"></i></li>
+                <li><i class="fab fa-google-plus-square"></i></li>
+            </ul>
+            <p>Copyright Â© 2019 All Rights Reserved.</p>
+        </div>
+
+    </div>
+    <div class="open2 ">
+        <div class="icon2">
+            <div> <i class="far fa-bookmark bookMark" id="openMenu"></i></div>
+            <div class="bar">
+                <i class="fas fa-bars " id="bar"></i></div>
+            <div class="top">
+                <ul>
+                    <li><i class="fas fa-globe"></i></li>
+                    <li><i class="fas fa-share-alt-square"></i></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container my-5">
+
+        <form>
+            <div class="row">
+                <div class="col">
+                    <input type="text" class="form-control" onkeyup="search(this.value)" placeholder="enter film">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" onkeyup="search(this.value)" placeholder="search">
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="container my-5">
+        <div id="showData" class="row">
+
+        </div>
+    </div>
+    <div class="container my-5">
+        <form>
+            <div class="row">
+                <div class="col-6 my-2">
+                    <input type="text" id="userInpName" onkeyup="validName(this.value)" class="form-control"
+                        placeholder="name">
+                    <div class="alert alert-danger" id="userAlert" role="alert">
+                        A simple danger alert—check it out!
+                    </div>
+                </div>
+                <div class="col-6 my-2">
+                    <input type="email" id="userEmail" onkeyup="validEmail(this.value)" class="form-control"
+                        placeholder="email">
+                    <div class="alert alert-danger" id="userEmailAlert" role="alert">
+                        A simple danger alert—check it out!
+                    </div>
+                </div>
+                <div class="col-6 my-2">
+                    <input type="text" id="userPhone" onkeyup="validPhone(this.value)" class="form-control"
+                        placeholder="phone">
+                    <div class="alert alert-danger" id="userPhoneAlert" role="alert">
+                        A simple danger alert—check it out!
+                    </div>
+                </div>
+                <div class="col-6 my-2">
+                    <input type="email" id="userAge" onkeyup="validAge(this.value)" class="form-control"
+                        placeholder="age">
+                    <div class="alert alert-danger" id="userAgeAlert" role="alert">
+                        A simple danger alert—check it out!
+                    </div>
+                </div>
+                <div class="col-6 my-2">
+                    <input type="password" id="userPass1" onkeyup="validPass(this.value)" class="form-control"
+                        placeholder="password">
+                    <div class="alert alert-danger" id="userPassAlert" role="alert">
+                        A simple danger alert—check it out!
+                    </div>
+                </div>
+                <div class="col-6 my-2">
+                    <input type="password" id="userPass2" onkeyup="validPass2(this.value)" class="form-control"
+                        placeholder="password">
+                    <div class="alert alert-danger" id="userPass2Alert" role="alert">
+                        A simple danger alert—check it out!
+                    </div>
+                </div>
+                <div class="col-12 my-3">
+                    <button class="btn btn-outline-danger" id="myButton" onclick="addUser()">add</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="js/jquery-3-4-1-min.js"></script>
+    <script src="js/popper-min.js"></script>
+    <script src="js/bootstrap-min.js"></script>
+    <script src="js/request.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/animate.js"></script>
+
+</body>
+
+</html>
